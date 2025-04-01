@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - greenmart</title>
+    
+    <style>
+        /* Promo banner */
+        .promo-banner {
+            background-color: rgba(43, 107, 226, 0.984);
+            text-align: center;
+            padding: 8px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Container styling */
+        .container {
+            background-color: #f4f4f4;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .breadcrumb-item {
+            display: inline;
+            color: #898585;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: " > ";
+            padding: 0 5px;
+        }
+
+        .breadcrumb-item a {
+            text-decoration: none;
+            color: rgba(43, 107, 226, 0.984);
+        }
+
+        .breadcrumb-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* FAQ Header */
+        .faq-header {
+            background-color: rgba(40, 96, 201, 0.984);
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* FAQ section */
+        .faq-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        /* Accordion-style FAQ */
+        .faq-item {
+            background: #fff;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .faq-item:hover {
+            background-color: rgba(43, 107, 226, 0.1);
+            transform: scale(1.02);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            font-size: 15px;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        /* Show answer when active */
+        .faq-item:focus + .faq-answer,
+        .faq-item:hover + .faq-answer {
+            display: block;
+        }
+        .faq_foot {
+            background-color: rgba(40, 96, 201, 0.984); /* Orange background */
+    padding: 20px;
+    text-align: left;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.faq_foot p {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq_foot a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.faq_foot a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="promo-banner">
+        <marquee behavior="scroll" direction="left">15% cashback for new users | Code: <strong>OG6043@</strong></marquee>
+    </div>
+
+    <section id="faq">
+        <div class="container">
+            <h2 style="color: rgba(43, 107, 226, 0.984);">Frequently Asked Questions</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="ex1.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">FAQs</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="faq-header">
+            Kindly check the FAQ below. If your query is not mentioned, then please contact us at:
+            <br>Email: support@green.com | Call: 81818 19368
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item" tabindex="0">How do I register?</div>
+            <div class="faq-answer">You can register by clicking on the "Sign Up" button and filling in your details.</div>
+
+            <div class="faq-item" tabindex="0">Are there any registration charges?</div>
+            <div class="faq-answer">No, registration is completely free.</div>
+
+            <div class="faq-item" tabindex="0">How can I track my order?</div>
+            <div class="faq-answer">You can track your order through the "My Orders" section in your account.</div>
+
+            <div class="faq-item" tabindex="0">What payment methods are accepted?</div>
+            <div class="faq-answer">We accept credit cards, debit cards, UPI, and COD.</div>
+
+            <div class="faq-item" tabindex="0">How do I reset my password ?</div>
+            <div class="faq-answer">You need to enter your email address on the login page and click on forgot password. An email with a reset password will be sent to your email address. With this, you can change your password.</div>
+            
+            <div class="faq-item" tabindex="0">Can i add more than one delivery address to an account ?</div>
+            <div class="faq-answer">Yes, you can add multiple delivery addresses to your Sambhaar.com account. However, remember that all items placed in a single order can only be delivered to one address; if you want different products delivered to a different address, you need to place them as separate orders.</div>
+       
+            <div class="faq-item" tabindex="0">Is it safe to use my credit / debit card on this e-commerce</div>
+            <div class="faq-answer">Yes, it is safe to use your card on sambhaar.com. A recent directive from RBI makes it mandatory to have an additional authentication pass code verified by VISA (VBV) or MSC, Master Card which has to be entered by online shoppers while paying online using visa or master credit card making online shopping safer.</div>
+
+            <div class="faq-item" tabindex="0">When will i receive my order?</div>
+            <div class="faq-answer">Once you have selected your products and clicking checkout, you will be prompted to choose a delivery slot. Your order will be delivered to you on the day, and the address selected by you.</div>
+
+            <div class="faq-item" tabindex="0">How do i change my deleivery address ?</div>
+            <div class="faq-answer">You can change your delivery address on our website once you log into your account. Click on “My Account” at the top right-hand corner and go to the “Update My Profile” section to change your delivery address.</div>
+            
+            <div class="faq-item" tabindex="0">How much are the deleivery charges ?</div>
+            <div class="faq-answer">No delivery charges for minimum orders of Rs.495/- and above for Grocery. Any orders below the minimum order amount shall attract delivery charges depending on the delivery location.</div>
+        
+            <div class="faq-item" tabindex="0">Will someone inform me if my deleivery gets delayed</div>
+            <div class="faq-answer">In case of any delay, our customer support team shall update accordingly.</div>
+        </div>
+
+        <div class="faq_foot">
+            <p>
+                Fruits and Vegetables are natural products that come in different shapes, sizes, and colors. 
+                While we have strict control over the average sizes and weights, there is always scope for 
+                weight to vary from your ordered quantity. As a process, we make sure that in all conditions, 
+                only a maximum of 100 grams can go extra, and hence you will be charged pro-rata for the additional quantity.
+            </p>
+            <p>
+                <strong>If you have any complaints or suggestions, please write to us at:</strong> 
+                <a href="mailto:support@sambhaar.com">support@sambhaar.com</a>
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

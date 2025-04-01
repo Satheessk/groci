@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="drop.css">
+        <link rel="stylesheet" href="groceries.css">
+        <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Promotional Banner -->
+    <div class="promo-banner">
+        <marquee behavior="scroll" direction="left"><p>15% cashback for new users | code: <strong>OG6043@</strong><span style="margin-left: 50px;">Enjoy same day delievery* accross tambaram </span><span style="margin-left: 50px;">Get free shipping above 499*-Buy Now </span><span style="margin-left:50px ;"></span></marquee></p>
+    </div>
+
+    <!-- Grocery Navbar -->
+    <nav class="navbar px-4">
+        <a class="navbar-brand" href="#">Green_Mart</a>
+        <div class="align-items-center mx-3">
+            <i class='bx bxs-edit-location' style='color:#ffffff'></i>
+            <select class="location-selector">
+                <option value="city">Your city</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Chengalpattu">Chengalpattu</option>
+                <option value="Kanchipuram">Kanchipuram</option>
+                <option value="Villuparam">Villuparam</option>
+                <option value="Tuticorin">Tuticorin</option>
+            </select>
+        </div>
+        <div class="search-bar d-flex mx-3">
+            <input class="form-control" type="text" placeholder="Search products in Your City">
+            <button class="btn btn-outline-secondary btn-lg ms-2">Search</button>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <a href="login.html" class="text-white text-decoration-none mx-3"><i class='bx bxs-user-circle' style='color:#ffffff'></i>Login/Sign Up</a>
+            <div class="cart-icon">
+                <a href="cart.html" class="text-white text-decoration-none"><i class='bx bxs-shopping-bags' style='color:#ffffff'></i>My Cart</a>
+                <span class="cart-badge"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar for GreenMart -->
+    <nav>
+        <ul>
+            <li ><a href="superstore"><i class='bx bxs-store' style='color:#ffffff'></i><strong>SuperStore</strong></a></li>
+            <li ><a href="#home">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#fruits">Fruits</a></li>
+            <li><a href="#veg">Vegetables</a></li>
+            <li><a href="#groci">Groceries</a></li>
+            <li>
+                <select>
+                    <option value="acc">My account</option>
+                    <option value="pro">My Profile</option>
+                    <option value="add">My Address</option>
+                    <option value="wish">Wish List</option>
+                    <option value="order">Order List</option>
+                </select>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <section id="home">
+        <div class="page-content">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://makkahyork.co.uk/wp-content/uploads/2018/08/slider1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://makkahyork.co.uk/wp-content/uploads/2018/08/slider2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="container">
+        <div class="row">
+            <!-- First column with 5 dropdown buttons -->
+            <div class="col-4">
+                <div class="row">
+                    <!-- Dropdown Button 1 -->
+                     <div class="drop">
+                    <div class="dropdown-container">
+                        <div class="dropdown-wrapper">
+                            <select class="dropdown">
+                                <option value="ess" disabled selected>Grocery Essential </option>
+                                <option value="ess">Atta,Sooji ,Vermicelli & Flour </option>
+                                <option value="ess">Dals & Pulses</option>
+                                <option value="ess">Rice & Rice Products</option>
+                                <option value="ess">Noodles & Pasta</option>
+                
+                            </select>
+                            <div class="dropdown-placeholder"></div>
+                        </div>
+                        <div class="dropdown-wrapper">
+                            <select class="dropdown">
+                                <option value="dai" disabled selected>Dairy & Fresh Foods</option>
+                                <option value="dai">option1</option>
+                                <option value="dai">Houston</option>
+                                <option value="dai">New York City</option>
+                            </select>
+                            <div class="dropdown-placeholder"></div>
+                        </div>
+                        <div class="dropdown-wrapper">
+                            <select class="dropdown">
+                                <option value="oil" disabled selected>Oils & Conditions</option>
+                                <option value="oil">Los Angeles</option>
+                                <option value="oil">Houston</option>
+                                <option value="oil">New York City</option>
+                            </select>
+                            <div class="dropdown-placeholder"></div>
+                        </div>
+                        <div class="dropdown-wrapper">
+                            <select class="dropdown">
+                                <option value="sw" disabled selected>Sweets & Savories</option>
+                                <option value="sw">Los Angeles</option>
+                                <option value="sw">Houston</option>
+                                <option value="sw">New York City</option>
+                            </select>
+                            <div class="dropdown-placeholder"></div>
+                        </div>
+                        <div class="dropdown-wrapper">
+                            <select class="dropdown">
+                                <option value="bv" disabled selected>Beverages & Fronen Foods</option>
+                                <option value="bv">Los Angeles</option>
+                                <option value="bv">Houston</option>
+                                <option value="bv">New York City</option>
+                            </select>
+                            <div class="dropdown-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Second column with 28 product cards -->
+            <div class="col-8">
+                <div class="row">
+                    <!-- Looping to create 28 cards -->
+                    <!-- Product Cards (1-28) -->
+                    <!-- For brevity, I've repeated the same structure for the first few cards, but you can add 28 cards following this pattern -->
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <p class="card-text">Description of Product 1</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 2</h5>
+                                <p class="card-text">Description of Product 2</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 3</h5>
+                                <p class="card-text">Description of Product 3</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>     
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 4</h5>
+                                <p class="card-text">Description of Product 4</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above block for cards 5 to 28 -->
+                    <!-- You can change the product details (name, image, description) as needed -->
+                </div>
+
+                <div class="row">
+                    <!-- Looping to create 28 cards -->
+                    <!-- Product Cards (1-28) -->
+                    <!-- For brevity, I've repeated the same structure for the first few cards, but you can add 28 cards following this pattern -->
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <p class="card-text">Description of Product 1</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 2</h5>
+                                <p class="card-text">Description of Product 2</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 3</h5>
+                                <p class="card-text">Description of Product 3</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 4</h5>
+                                <p class="card-text">Description of Product 4</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above block for cards 5 to 28 -->
+                    <!-- You can change the product details (name, image, description) as needed -->
+                </div>
+
+                <div class="row">
+                    <!-- Looping to create 28 cards -->
+                    <!-- Product Cards (1-28) -->
+                    <!-- For brevity, I've repeated the same structure for the first few cards, but you can add 28 cards following this pattern -->
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <p class="card-text">Description of Product 1</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 2</h5>
+                                <p class="card-text">Description of Product 2</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 3</h5>
+                                <p class="card-text">Description of Product 3</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 4</h5>
+                                <p class="card-text">Description of Product 4</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above block for cards 5 to 28 -->
+                    <!-- You can change the product details (name, image, description) as needed -->
+                </div>
+
+                <div class="row">
+                    <!-- Looping to create 28 cards -->
+                    <!-- Product Cards (1-28) -->
+                    <!-- For brevity, I've repeated the same structure for the first few cards, but you can add 28 cards following this pattern -->
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <p class="card-text">Description of Product 1</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 2</h5>
+                                <p class="card-text">Description of Product 2</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 3</h5>
+                                <p class="card-text">Description of Product 3</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 4</h5>
+                                <p class="card-text">Description of Product 4</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above block for cards 5 to 28 -->
+                    <!-- You can change the product details (name, image, description) as needed -->
+                </div>
+
+                <div class="row">
+                    <!-- Looping to create 28 cards -->
+                    <!-- Product Cards (1-28) -->
+                    <!-- For brevity, I've repeated the same structure for the first few cards, but you can add 28 cards following this pattern -->
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 1</h5>
+                                <p class="card-text">Description of Product 1</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 2</h5>
+                                <p class="card-text">Description of Product 2</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 3</h5>
+                                <p class="card-text">Description of Product 3</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                             
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Product 4</h5>
+                                <p class="card-text">Description of Product 4</p>
+                                <button class="btn btn-primary add-to-cart"  data-product-id="1">Add to Cart</button>                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Repeat the above block for cards 5 to 28 -->
+                    <!-- You can change the product details (name, image, description) as needed -->
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <!-- First Column: Quick Links -->
+            <div class="footer-column">
+                <h2>Quick Links</h2>
+                <p><a href="ex1.html">Home</a></p>
+                <p><a href="#">Superstore</a></p>
+                <p><a href="#">Grocery Store</a></p>
+                <p><a href="#">Fruits</a></p>
+            </div>
+
+            <!-- Second Column: Information -->
+            <div class="footer-column">
+                <h2>Information</h2>
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="faq.html">FAQ</a></p>
+                <p><a href="privacy.html">Privacy Policy</a></p>
+                <p><a href="terms.html">Terms & Conditions</a></p>
+                <p><a href="refund.html">Return & Refund</a></p>
+            </div>
+
+            <!-- Third Column: Contact Us -->
+            <div class="footer-column">
+                <h2>Contact Us</h2>
+                <p>123 GreenMart Lane</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@greenmart.com</p>
+            </div>
+
+            <!-- Fourth Column: Stay Connected -->
+            <div class="footer-column">
+                <h2>Stay Connected</h2>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">Twitter</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll(".dropdown").forEach((dropdown) => {
+            dropdown.addEventListener("focus", function () {
+                let placeholder = this.nextElementSibling;
+                placeholder.style.height = "150px"; // Adjust based on dropdown size
+            });
+
+            dropdown.addEventListener("blur", function () {
+                let placeholder = this.nextElementSibling;
+                placeholder.style.height = "0";
+            });
+        });
+    </script>
+    <script src="cart.js"></script>
+   
+
+</body>
+
+</html>

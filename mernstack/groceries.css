@@ -1,0 +1,201 @@
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Promotional Banner */
+.promo-banner {
+    background-color: rgba(43, 107, 226, 0.984);
+    text-align: center;
+    padding: 3px;
+    display: flex;
+    animation: marquee 20s linear infinite;
+    overflow: hidden;
+}
+
+.promo-banner p {
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    
+}
+
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    padding: 14px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Location Selector Styles */
+nav select {
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 16px;
+    min-width: 120px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav select:hover {
+    background-color: #555;
+    color: #ffffff;
+    
+}
+
+nav select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Grocery Navbar Styles */
+.navbar {
+    background-color:#222;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.search-bar {
+    flex-grow: 1;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.absec {
+    background-color: #928e8e;
+    height: 3cm;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+}
+
+.absec h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.absec .d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fix for left-aligned footer columns */
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: #e5e6e7;
+    padding: 3rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.footer-column {
+    width: 23%; /* Set the width of each column */
+}
+
+/* Footer Column Header and Paragraph Styling */
+.footer-column h2, .footer-column p {
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+/* Header Styling */
+.footer-column h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5cm;
+}
+
+/* Paragraph Styling */
+.footer-column p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5cm;
+}
+
+.footer-column a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+/*responsive*/
+/* Default (Laptop View) */
+.container {
+    display: flex;
+    flex-direction: row; /* Side by side */
+}
+
+/* Mobile View (Less than 768px) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items */
+    }
+}
+
+
+

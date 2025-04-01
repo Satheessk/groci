@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #e5e6e7;
+            padding: 3rem 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 3rem;
+        }
+
+        .footer-column {
+            width: 23%; /* Set the width of each column */
+        }
+
+        /* Footer Column Header and Paragraph Styling */
+        .footer-column h2, .footer-column p {
+            margin-left: 1cm;
+            margin-right: 1cm;
+        }
+
+        /* Header Styling */
+        .footer-column h2 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0.5cm;
+        }
+
+        /* Paragraph Styling */
+        .footer-column p {
+            font-size: 0.9rem;
+            margin-bottom: 0.5cm;
+        }
+
+        .footer-column a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+
+        /* Breadcrumb Styling */
+        .breadcrumb-container {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+            margin: 0;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .breadcrumb {
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .breadcrumb-item {
+            display: inline;
+            color: #898585;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">";
+            padding: 0 0.5rem;
+            color: rgba(43, 107, 226, 0.984);
+        }
+
+        .breadcrumb-item a {
+            color: rgba(43, 107, 226, 0.984);
+            text-decoration: none;
+        }
+
+        .breadcrumb-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Us Section Styling */
+        .absec h2 {
+            text-align: left;
+            color: rgb(2, 0, 0);
+            font-size: x-large;
+        }
+        /*marquee*/
+        .promo-banner {
+            background-color: rgba(43, 107, 226, 0.984);
+            text-align: center;
+            padding: 3px;
+        }
+
+        .promo-banner p {
+            margin: 0;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="promo-banner">
+        <marquee behavior="scroll" direction="left"><p>15% cashback for new users | code: <strong>OG6043@</strong></marquee></p>
+    </div>
+    <!-- about us -->
+    <section id="about" class="absec">
+        <div class="breadcrumb-container">
+        <h2><center>About Us</center></h2>
+
+        <!-- Breadcrumb navigation with division and colors -->
+        
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="ex1.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <!-- Image on the left -->
+                <div class="flex-shrink-0">
+                    <img src="https://makkahyork.co.uk/wp-content/uploads/2018/08/about.jpg" alt="ab1" class="img-fluid" width="400" height="200">
+                </div>
+                <!-- Content on the right -->
+                <div class="flex-grow-1 ms-4">
+                    <p style="color: rgba(43, 107, 226, 0.984); font-size: xx-large;">Save more with GO!</p>
+                    <p style="color: rgba(43, 107, 226, 0.984); font-size: xx-large;"> We give you the lowest prices on all your grocery needs.</p>
+                    <h4>Our Vision</h4>
+                    <p style="font-size: small;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,</p>
+                    <br>
+                    <h4>Our Goal</h4>
+                    <p style="font-size: small;">When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div style="background-color:#f9f8f8; padding: 20px 0;">
+            <h4 class="text-center" style="color:black;font-size: x-large;">What We Provide ?</h4>
+            <br>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-cart-check-fill" style="font-size: 40px;"></i>
+                        <h4 style="color: rgba(43, 107, 226, 0.984);">Best Prices & Offers</h4>
+                        <p style="font-size: small;">There are many variations of passages of Lorem Ipsum available, by injected humour.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-globe" style="font-size: 40px;"></i>
+                        <h4 style="color: rgba(43, 107, 226, 0.984);">Wide Assortment</h4>
+                        <p style="font-size: small;">Lorem Ipsum is simply dummy text of the printing industry. Lorem has been the industry's standard text ever.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-arrow-clockwise" style="font-size: 40px;"></i>
+                        <h4 style="color: rgba(43, 107, 226, 0.984);">Easy Returns</h4>
+                        <p style="font-size: small;">It is a long-established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-truck" style="font-size: 40px;"></i>
+                        <h4 style="color: rgba(43, 107, 226, 0.984);">Free & Next Day Delivery</h4>
+                        <p style="font-size: small;">Contrary to popular belief. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-bag-heart-fill" style="font-size: 40px;"></i>
+                        <h4 style="color: rgba(43, 107, 226, 0.984);">100% Satisfaction Guarantee</h4>
+                        <p style="font-size: small;">There are many variations of passages of Lorem Ipsum available, by injected humour.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-tags-fill" style="font-size: 40px;"></i>
+                        <h4 style="color: rgba(43, 107, 226, 0.984);">Great Daily Deals Discount</h4>
+                        <p style="font-size: small;">It is a long-established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <!-- First Column: Quick Links -->
+                <div class="footer-column">
+                    <h2>Quick Links</h2>
+                    <p><a href="ex1.html">Home</a></p>
+                    <p><a href="#">Superstore</a></p>
+                    <p><a href="#">Grocery Store</a></p>
+                    <p><a href="#">Fruits</a></p>
+                </div>
+
+                <!-- Second Column: Information -->
+                <div class="footer-column">
+                    <h2>Information</h2>
+                    <p><a href="#">About Us</a></p>
+                    <p><a href="faq.html">FAQ</a></p>
+                    <p><a href="privacy.html">Privacy Policy</a></p>
+                    <p><a href="terms.html">Terms & Conditions</a></p>
+                </div>
+
+                <!-- Third Column: Contact Us -->
+                <div class="footer-column">
+                    <h2>Contact Us</h2>
+                    <p>123 GreenMart Lane</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: contact@greenmart.com</p>
+                </div>
+
+                <!-- Fourth Column: Stay Connected -->
+                <div class="footer-column">
+                    <h2>Stay Connected</h2>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">Twitter</a></p>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

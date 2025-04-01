@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GreenMart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(43, 107, 226, 0.984);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        /* Home Button Styling */
+        .home-button {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            background-color: white;
+            color: rgba(3, 8, 18, 0.984);
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .home-button:hover {
+            background-color: #ddd;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .contact-info h2 {
+            color: rgba(43, 107, 226, 0.984);
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .contact-form {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .contact-form h2 {
+            color: rgba(43, 107, 226, 0.984);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        button {
+            background-color: rgba(43, 107, 226, 0.984);
+            color: white;
+            border: none;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: rgba(30, 90, 210, 0.984);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(43, 107, 226, 0.984);
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .home-button {
+                position: static;
+                display: block;
+                margin: 10px auto;
+                text-align: center;
+                width: fit-content;
+            }
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #e5e6e7;
+            padding: 3rem 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 3rem;
+        }
+
+        .footer-column {
+            width: 23%; /* Set the width of each column */
+        }
+
+        /* Footer Column Header and Paragraph Styling */
+        .footer-column h2, .footer-column p {
+            margin-left: 1cm;
+            margin-right: 1cm;
+        }
+
+        /* Header Styling */
+        .footer-column h2 {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5cm;
+        }
+
+        /* Paragraph Styling */
+        .footer-column p {
+            font-size: 0.9rem;
+            margin-bottom: 0.5cm;
+            
+        }
+
+        .footer-column a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="ex1.html" class="home-button">🏠 Home</a>
+        </nav>
+        <h1>Contact Us</h1>
+        <p>We’re here to help! Reach out with any questions or concerns.</p>
+    </header>
+
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Email:</strong> <a href="mailto:support@greenmart.com">support@greenmart.com</a></p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Address:</strong> 123 Green Street, Eco City, Earth</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <!-- First Column: Quick Links -->
+                <div class="footer-column">
+                    <h2>Quick Links</h2>
+                    <p><a href="ex1.html">Home</a></p>
+                    <p><a href="#">Superstore</a></p>
+                    <p><a href="#">Grocery Store</a></p>
+                    <p><a href="#">Fruits</a></p>
+                </div>
+
+                <!-- Second Column: Information -->
+                <div class="footer-column">
+                    <h2>Information</h2>
+                    <p><a href="#">About Us</a></p>
+                    <p><a href="faq.html">FAQ</a></p>
+                    <p><a href="privacy.html">Privacy Policy</a></p>
+                    <p><a href="terms.html">Terms & Conditions</a></p>
+                </div>
+
+                <!-- Third Column: Contact Us -->
+                <div class="footer-column">
+                    <h2>Contact Us</h2>
+                    <p style="color: #333;">123 GreenMart Lane</p>
+                    <p style="color: #333;">Phone: (123) 456-7890</p>
+                    <p style="color: #333;">Email: contact@greenmart.com</p>
+                </div>
+
+                <!-- Fourth Column: Stay Connected -->
+                <div class="footer-column">
+                    <h2>Stay Connected</h2>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Instagram</a></p>
+                    <p><a href="#">Twitter</a></p>
+                </div>
+            </div>
+            <hr>
+            <p style="text-align:center;color: #333;" >&copy; 2025 GreenMart.com | All rights reserved.</p>
+        </footer>
+        
+    
+
+</body>
+</html>

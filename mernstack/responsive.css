@@ -1,0 +1,63 @@
+/* 📌 Default Styles (For Large Screens - Desktop) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ✅ Flexible Container for All Screens */
+.container {
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap when screen shrinks */
+    justify-content: center; /* Centers content */
+    gap: 20px; /* Adds spacing between elements */
+    padding: 20px;
+}
+
+/* ✅ Responsive Boxes/Sections */
+.box, .section {
+    flex: 1 1 30%; /* Default: 3 columns */
+    min-width: 300px; /* Prevents items from shrinking too much */
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+/* 📱 Mobile (Up to 600px) */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+    }
+
+    .box, .section {
+        width: 90%; /* Full width on small screens */
+    }
+
+    button {
+        width: 100%; /* Full-width buttons */
+    }
+}
+
+/* 📱 Small Tablets (601px - 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .box, .section {
+        width: 80%;
+    }
+}
+
+/* 💻 Half-Screen Laptops & Tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .box, .section {
+        flex: 1 1 45%; /* Two items per row */
+    }
+}
+
+/* 🖥️ Large Screens (Above 1024px) */
+@media (min-width: 1025px) {
+    .box, .section {
+        flex: 1 1 30%; /* Three items per row */
+    }
+}

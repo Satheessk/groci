@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Cart Icon -->
+    <div class="cart-icon">
+        <a href="cart.html" class="text-white text-decoration-none">
+            <i class='bx bxs-shopping-bags' style='color:#ffffff'></i> My Cart
+        </a>
+        <span class="cart-badge" style="display: none;">0</span> <!-- Initially hidden -->
+    </div>
+    
+    <button class="add-to-cart">Add to Cart</button>
+    <button class="clear-cart">Clear Cart</button>
+    
+    <script src="script.js"></script>
+    
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let cartBadge = document.querySelector(".cart-badge");
+    
+        // Load cart count from localStorage (default is 0)
+        let cartCount = localStorage.getItem("cartCount") ? parseInt(localStorage.getItem("cartCount")) : 0;
+        updateCartBadge(cartCount);
+    
+        // Add event listener to all "Add to Cart" buttons
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+            button.addEventListener("click", function () {
+                cartCount++; // Increase cart count
+                updateCartBadge(cartCount); // Update badge dynamically
+                localStorage.setItem("cartCount", cartCount); // Save count to localStorage
+            });
+        });
+    
+        // Optional: "Clear Cart" button to reset cart manually
+        document.querySelector(".clear-cart")?.addEventListener("click", function () {
+            cartCount = 0;
+            updateCartBadge(cartCount);
+            localStorage.setItem("cartCount", cartCount);
+        });
+    
+        // Function to update the cart badge dynamically
+        function updateCartBadge(count) {
+            if (cartBadge) {
+                if (count > 0) {
+                    cartBadge.textContent = count; // Show count
+                    cartBadge.style.display = "inline-block"; // Show badge
+                } else {
+                    cartBadge.style.display = "none"; // Hide badge when empty
+                }
+            }
+        }
+    });
+</script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7; /* Light gray background for the entire page */
+            color: #333; /* Dark gray text for readability */
+        }
+
+        /* Promotional Banner */
+        .promo-banner {
+            background-color: #28a745; /* Green color for the promo banner */
+            text-align: center;
+            padding: 10px;
+        }
+
+        .promo-banner p {
+            margin: 0;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            padding: 14px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555; /* Darken on hover */
+        }
+
+        /* Location Selector Styles */
+        nav select {
+            background-color: #333;
+            color: white;
+            border: none;
+            font-size: 16px;
+            min-width: 120px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav select:hover {
+            background-color: #555;
+        }
+
+        nav select:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        /* Grocery Navbar Styles */
+        .navbar {
+            background-color: #222;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+        }
+
+        .cart-icon {
+            position: relative;
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 12px;
+        }
+
+        /* About Us Section */
+        .absec {
+            background-color: #fff; /* White background to distinguish the About Us section */
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .absec h2 {
+            text-align: center;
+            color: #28a745; /* Green header */
+            margin-bottom: 1em;
+            font-size: 2rem;
+        }
+
+        .absec .d-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .absec p {
+            font-size: 1.2rem;
+        }
+
+        .absec .flex-grow-1 {
+            padding-left: 2rem;
+            color: #444; /* Darker text for readability */
+        }
+
+        .absec h4 {
+            color: #28a745; /* Green for headings */
+        }
+
+        .absec .row .col-md-4 {
+            margin-top: 2rem;
+        }
+
+        .absec .col-md-4 i {
+            color: #28a745; /* Green for icons */
+        }
+
+        .absec .col-md-4 h4 {
+            color: #28a745; /* Green for titles */
+        }
+
+        .absec .col-md-4 p {
+            font-size: 1rem;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #e5e6e7;
+            padding: 3rem 0;
+            background-color: #333; /* Dark footer */
+            color: white;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 3rem;
+        }
+
+        .footer-column {
+            width: 23%;
+        }
+
+        .footer-column h2,
+        .footer-column p {
+            margin-left: 1cm;
+            margin-right: 1cm;
+        }
+
+        .footer-column h2 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5cm;
+        }
+
+        .footer-column p {
+            font-size: 0.9rem;
+            margin-bottom: 0.5cm;
+        }
+
+        .footer-column a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-column a:hover {
+            text-decoration: underline;
+            color: #ff6f61; /* Coral for hover effect */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Promotional Banner -->
+    <div class="promo-banner">
+        <marquee behavior="scroll" direction="left"><p>15% cashback for new users | code: <strong>OG6043@</strong></marquee></p>
+    </div>
+
+    <!-- Grocery Navbar -->
+    <nav class="navbar px-4">
+        <a class="navbar-brand" href="#">Green_Mart</a>
+        <div class="align-items-center mx-3">
+            <i class='bx bxs-edit-location' style='color:#ffffff'></i>
+            <select class="location-selector">
+                <option value="city">Your city</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Chengalpattu">Chengalpattu</option>
+                <option value="Kanchipuram">Kanchipuram</option>
+                <option value="Villuparam">Villuparam</option>
+                <option value="Tuticorin">Tuticorin</option>
+            </select>
+        </div>
+        <div class="search-bar d-flex mx-3">
+            <input class="form-control" type="text" placeholder="Search products in Your City">
+            <button class="btn btn-outline-secondary btn-lg ms-2">Search</button>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <a href="login.html" class="text-white text-decoration-none mx-3"><i class='bx bxs-user-circle' style='color:#ffffff'></i>Login/Sign Up</a>
+            <div class="cart-icon">
+                <a href="cart.html" class="text-white text-decoration-none"><i class='bx bxs-shopping-bags' style='color:#ffffff'></i>My Cart</a>
+                <span class="cart-badge">3</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar for GreenMart -->
+    <nav>
+        <ul>
+            <li><a href="superstore"><i class='bx bxs-store' style='color:#ffffff'></i><strong>SuperStore</strong></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#fruits">Fruits</a></li>
+            <li><a href="#veg">Vegetables</a></li>
+            <li><a href="#groci">Groceries</a></li>
+            <li>
+                <select>
+                    <option value="acc">My account</option>
+                    <option value="pro">My Profile</option>
+                    <option value="add">My Address</option>
+                    <option value="wish">Wish List</option>
+                    <option value="order">Order List</option>
+                </select>
+            </li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Us Section -->
+    <section id="about" class="absec">
+        <h2>About Us</h2>
+        <div class="d-flex">
+            <div class="flex-grow-1">
+                <p>We bring the best groceries and fresh produce to your doorstep. GreenMart is all about healthy living with sustainable practices.</p>
+                <p>Our vision is to offer organic, eco-friendly products at affordable prices, making it easier for you to choose a healthy lifestyle.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>Contact Us</h2>
+                <p>GreenMart Headquarter, New York, USA</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Email: support@greenmart.com</p>
+            </div>
+            <div class="footer-column">
+                <h2>Quick Links</h2>
+                <p><a href="#home">Home</a></p>
+                <p><a href="about.html">About</a></p>
+                <p><a href="contact">Contact</a></p>
+            </div>
+            <div class="footer-column">
+                <h2>Social</h2>
+                <p><a href="facebook.com">Facebook</a></p>
+                <p><a href="twitter.com">Twitter</a></p>
+                <p><a href="instagram.com">Instagram</a></p>
+            </div>
+            <div class="footer-column">
+                <h2>Subscribe</h2>
+                <p>Subscribe to our newsletter for updates and offers</p>
+                <form>
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
